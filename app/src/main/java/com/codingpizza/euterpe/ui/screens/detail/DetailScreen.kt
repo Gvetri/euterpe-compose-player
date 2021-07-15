@@ -25,13 +25,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.codingpizza.euterpe.model.ListItem
 import com.codingpizza.euterpe.model.ListItemUriStatus
 import com.codingpizza.euterpe.ui.common.CenterLoading
-import com.codingpizza.euterpe.ui.theme.EuterpeTheme
 import com.codingpizza.euterpe.ui.theme.primaryVariantColor
 import com.codingpizza.euterpe.ui.theme.secondaryColor
 import timber.log.Timber
