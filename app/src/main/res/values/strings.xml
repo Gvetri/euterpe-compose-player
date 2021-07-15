@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Euterpe</string>
+    <string name="feed">Feed</string>
+    <string name="downloads">Downloads</string>
+</resources>
