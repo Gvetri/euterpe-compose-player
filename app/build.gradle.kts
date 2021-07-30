@@ -17,7 +17,7 @@ android {
 
     defaultConfig {
         applicationId = "com.codingpizza.euterpe"
-        minSdk = 23
+        minSdk = 24
         targetSdk = 30
         versionCode = 1
         versionName = "1.0"
@@ -31,7 +31,7 @@ android {
 
     lint {
         lintConfig = rootProject.file("build-config/lint.xml")
-        isWarningsAsErrors = true
+        warningsAsErrors = true
         sarifReport = true
     }
 
@@ -59,14 +59,16 @@ android {
     }
 
     packagingOptions {
-        exclude("META-INF/DEPENDENCIES")
-        exclude("META-INF/NOTICE")
-        exclude("META-INF/LICENSE")
-        exclude("META-INF/LICENSE.txt")
-        exclude("META-INF/NOTICE.txt")
-        exclude("META-INF/AL2.0.txt")
-        exclude("META-INF/AL2.0")
-        exclude("META-INF/LGPL2.1")
+        resources {
+            excludes+= "META-INF/DEPENDENCIES" +
+                "META-INF/NOTICE" +
+                "META-INF/LICENSE" +
+                "META-INF/LICENSE.txt" +
+                "META-INF/NOTICE.txt" +
+                "META-INF/AL2.0.txt" +
+                "META-INF/AL2.0" +
+                "META-INF/LGPL2.1"
+        }
     }
 }
 
