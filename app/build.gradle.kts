@@ -31,7 +31,7 @@ android {
 
     lint {
         lintConfig = rootProject.file("build-config/lint.xml")
-        isWarningsAsErrors = true
+//        isWarningsAsErrors = true
         sarifReport = true
     }
 
@@ -94,7 +94,7 @@ dependencies {
     val exoplayerHls = "com.google.android.exoplayer:exoplayer-hls:_"
     val exoplayerMediaSession = "com.google.android.exoplayer:extension-mediasession:_"
     val exoplayerMediaRouter = "com.google.android.exoplayer:extension-cast:_"
-    val mediaRouter = "androidx.mediarouter:mediarouter:_"
+    val mediaRouter = AndroidX.mediaRouter
 
     //Modules
     implementation(project(":model"))
