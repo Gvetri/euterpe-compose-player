@@ -31,7 +31,6 @@ android {
 
     lint {
         lintConfig = rootProject.file("build-config/lint.xml")
-//        isWarningsAsErrors = true
         sarifReport = true
     }
 
